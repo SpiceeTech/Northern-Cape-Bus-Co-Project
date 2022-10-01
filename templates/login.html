@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .form-div {
+                display: inline-block;
+                border: solid;
+                border-width: 1px;
+                border-color: gray;
+                border-radius: 7px;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                margin-left: 200px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        {%include "header.html"%}
+        <div class="form-div">
+            <form action="">
+                Username: <input type="text" placeholder="Email" class="name-input">
+                Password: <input type="text" placeholder="Enter your password" class="surname-input">
+                <input type="submit" value="Login">
+                <p>
+                  Don't have an account? <a href="http://127.0.0.1:8000/registration/"> Click here </a> to create one.
+                </p>
+            </form>
+        </div>
+        
+        {%include "footer.html"%}
+    </body>
+</html>

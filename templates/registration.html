@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .main-reg-div {
+            border: solid;
+            border-width: 1px;
+            border-color: gray;
+            border-radius: 7px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .p1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: red;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        .date-input {
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+    {%include "header.html"%}
+
+    <h2>REGISTER YOUR LOYAL CUSTOMER'S ACCOUNT</h2>
+
+    <div class="main-reg-div">
+       <form action="#" method="post">
+            <label for="name">Name: </label> 
+            <input type="text" placeholder="Enter your first name" id="name" required>
+            <label for="surname">Surname: </label> 
+            <input type="text" placeholder="Enter your surname" id="surname" required>
+            <label for="phone">Phone number: </label>
+            <input type="number" placeholder="Enter your phone number" id="phone" required>
+            <label for="id_no">ID number: </label> 
+            <input type="text" placeholder="Enter your ID number" id="id_no" required>
+            <label for="dob">Date of birth: </label> 
+            <input type="date" id="dob" class="date-input" required>
+            <br>
+            <p class="p1">These are going to be your logging in details:</p>
+            <br>
+            <label for="email">Email: </label> 
+            <input type="email" placeholder="example@gmail.com" id="email"  required>
+            <label for="password">Password: </label> 
+            <input type="password" placeholder="Enter your password" id="password" required>
+
+            <input type="submit" value="Register">
+        </form> 
+    </div>
+    
+    {%include "footer.html"%}
+</body>
+</html>

@@ -14,3 +14,9 @@ def about_us(request):
 
 def contact(request):
   return render(request, 'contacts.html')
+
+def login(request):
+  return render(request, 'login.html')
+
+def registration(request):
+  return render(request, 'registration.html')

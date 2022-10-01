@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+      .booking-form {
+        background-color: turquoise;
+        padding-left: 27px;
+        padding-top: 7px;
+        padding-right: 3px;
+        padding-bottom: 0.1px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+      }
+
+      .from-input,
+      .to-input,
+      .date-input {
+        display: inline-block;
+        background-color: turquoise;
+        border: solid;
+        border-color: turquoise;
+        color: black;
+        transition: border 0.15s;
+        border-width: 2px;
+        width: 230px;
+      }
+
+      .from-input:hover,
+      .to-input:hover,
+      .date-input:hover {
+        border: solid;
+        border-width: 2px;
+        border-color: #1a242f;
+      }
+
+    </style>
   </head>
   <body>
     {%include 'header.html'%}
 
-    <h1>Home page</h1>
+    <h3>Search your ticket here</h3>
+    <div>
+
+      <div class="booking-form">
+        <form action="#" method="post">
+          <select class= "from-input" name="from-input" id="areafrom">
+            <option>From</option>
+            <Option value="option1">Kuruman</Option>
+            <Option value="option2">Springbok</Option>
+            <Option value="option3">Kimberley</Option>
+            <Option value="option4">Upington</Option>
+          </select>
+          <select class= "to-input" name="to-input" id="areato">
+            <option>To</option>
+            <Option value="option1">Kuruman</Option>
+            <Option value="option2">Springbok</Option>
+            <Option value="option3">Kimberley</Option>
+            <Option value="option4">Upington</Option>
+          </select>
+         <input type="date" placeholder="DATE" class="date-input">
+        </div>
+        <center><input type="submit" value="Search"></center>
+        </form>
+        
+    </div>
+    
 
     {%include 'footer.html'%}
   </body>
