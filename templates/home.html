@@ -130,6 +130,7 @@
 
       <div class="booking-form">
         <form action="#" method="post">
+          {% csrf_token %}
           <select class= "from-input" name="from-input" id="areafrom">
             <option>From</option>
             <Option value="option1">Kuruman</Option>
